@@ -41,6 +41,7 @@ body {
 .bk-header {
 	background-color:@color-swatch1;
 	padding: 30px 0px 65px;
+	margin-bottom:30px;
 }
 
 .companyheader {
@@ -100,8 +101,9 @@ body {
 	=============================== */
 
 .blog-list-footer {
-	position: absolute;
-	left: 500px;
+	margin: 0px auto;
+	display: table;
+	padding: 20px 0px 40px 0px;
 	a {
 		margin: 0 50px;
 	}
@@ -277,63 +279,6 @@ body {
 }
 
 /*	===============================
-	Bootstrap Modifications
-	=============================== */
-
-input, textarea {
-	border:0;
-	background-color: darken(@color-swatch1,3%);
-}
-
-.widget.profile form fieldset input {
-	background-color: darken(@color-swatch1,3%);
-}
-
-.widget.profile form button {
-	padding: 7px 14px 11px;
-}
-
-.signupform fieldset button {
-	padding: 10px 14px 14px 14px;
-}
-
-.blog-search-submit-button {
-	padding:4px 14px 8px 14px;
-	background-color:@color-swatch3;
-	border:0;
-	margin-bottom:10px;
-	font-family:@font-swatch7-font-family; 
-	font-weight: @font-swatch7-font-weight; 
-	color:@font-swatch7-color; 
-	line-height:@font-swatch7-line-height; 
-	letter-spacing: @font-swatch7-letter-spacing; 
-	font-size: @font-swatch7-font-size;
-		&:hover {
-		background-color: lighten(@color-swatch3,10%);
-		border: none;
-	}
-}
-
-.widget.button button {
-	&:hover{
-		background-color:lighten(@color-swatch3,5%);
-	}
-}
-
-.widget.responsiveslideshow .slideshow-widget .btn-play {
-	height:50px;
-}
-
-.widget.responsiveslideshow .slideshow-widget .btn-prev, .widget.responsiveslideshow .slideshow-widget .btn-next {
-	padding:5px;
-	background-color:#ddd;
-}
-
-.signupform fieldset input {
-	width:50%;
-}
-
-/*	===============================
 	Ecom
 	=============================== */
 .widget.ecomcheckout .delivery select {
@@ -378,6 +323,69 @@ select {
     background-color: darken(@color-swatch1,3%);
     background-position-x: 95%;
     background-position-y: 53%;
+}
+
+.widget.ecomcheckout {
+	margin:30px 0px;
+}
+
+/*	===============================
+	Bootstrap Modifications
+	=============================== */
+
+input, textarea {
+	border:0;
+	background-color: darken(@color-swatch1,3%);
+}
+
+.widget.profile form fieldset input {
+	background-color: darken(@color-swatch1,3%);
+}
+
+.widget.profile form button {
+	padding: 7px 14px 11px;
+}
+
+.blog-search-submit-button {
+	padding:4px 14px 8px 14px;
+	background-color:@color-swatch3;
+	border:0;
+	margin-bottom:10px;
+	font-family:@font-swatch7-font-family; 
+	font-weight: @font-swatch7-font-weight; 
+	color:@font-swatch7-color; 
+	line-height:@font-swatch7-line-height; 
+	letter-spacing: @font-swatch7-letter-spacing; 
+	font-size: @font-swatch7-font-size;
+		&:hover {
+		background-color: lighten(@color-swatch3,10%);
+		border: none;
+	}
+}
+
+.widget.button button {
+	&:hover{
+		background-color:lighten(@color-swatch3,5%);
+	}
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-play {
+	height:50px;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-prev, .widget.responsiveslideshow .slideshow-widget .btn-next {
+	padding:5px;
+	background-color:#ddd;
+}
+
+.signupform fieldset input {
+	width:50%;
+	text-indent:5px;
+}
+
+.signupform fieldset button {
+	padding:20px 14px 24px 14px;
+	line-height:0;
 }
 
 /*	===============================
@@ -425,6 +433,44 @@ footer .widget.profile .bk-profile-socialicons span a:hover {
 	.textbox {
 		padding: 0px 0px 50px 0px;
 	}
+	.blog-post-feature-image-wrap {
+		width: 100%;
+	}
+	.blog-post-list {
+	.blog-post-feature-image-wrap {
+		position: relative;
+		margin: 0;
+		height: 200px;
+		width: 100%;
+		float: none;
+		margin-bottom: 10px;
+		&:after {
+			display: none;
+		}
+	}
+	.blog-post-item > * {
+		margin-right: 0;
+		max-width: 100%;
+	}
+	}
+	.blogpost-page .blog-post-feature-image-wrap {
+		height: 250px;
+	}
+	.blog-post-list .blog-post-item > * {
+		margin-left:0;
+	}
+	.blog-post-title {
+		margin-top:0;
+	}
+	.main .blog-post-date {
+		margin-bottom:20px;
+	}
+	.blog-post-list .blog-post-item {
+		padding:0;
+	}
+	.blog-post-title, .blog-post-summary, .blog-post-more-link, .blog-post-date {
+		padding:0px 20px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -460,5 +506,9 @@ footer .widget.profile .bk-profile-socialicons span a:hover {
 	.widget.companyname a {
 		font-size:bkscale(@font-swatch10-font-size, 0.9);
 		line-height: bkscale(@font-swatch10-line-height, 0.9);
+	}
+	.widget.responsiveslideshow .slideshow-widget .btn-play {
+		width: 15%;
+		left: 43%;
 	}
 }

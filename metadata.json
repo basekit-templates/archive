@@ -1,7 +1,7 @@
 {
-	"name":"Techdesk",
-	"thumbnail":"techdesk.png",
-	"screenshot":"techdesk.png",
+	"name":"Archive",
+	"thumbnail":"archive.png",
+	"screenshot":"archive.png",
         "pageTypes": [
         "home",
         "default"
