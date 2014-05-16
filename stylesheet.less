@@ -69,21 +69,31 @@ body {
 	float:right;
 	position: relative;
 	z-index: 5000;
+	padding: 20px 0px;
 }
 
 .widget .extendednavigation a.pull {
 	width: 26px;
 	height: 20px;
-	top:-30px;
 }
 
 .widget .extendednavigation ul li:hover ul {
-	background-color:lighten(@color-swatch3,15%);
+	background-color:@color-swatch3;
 }
 
 .widget .extendednavigation ul li.folder:after {
-	border-top-color:lighten(@color-swatch3,15%);
+	border-top-color:@color-swatch3;
 }
+
+.widget .extendednavigation ul li a:hover, .widget .extendednavigation ul li.folder .text:hover {
+	background-color: @color-swatch4;
+	color: @font-swatch7-color;
+}
+
+.widget .extendednavigation ul li a, .widget .extendednavigation li > .text {
+	padding: 5px 20px;
+}
+
 
 /*	===============================
 	Blog
@@ -114,7 +124,7 @@ body {
 		position: relative;
 		z-index: 1;
 		max-width: 600px;
-		margin-left: 55%;
+		margin-left: 45%;
 	}
 } 
 
@@ -173,11 +183,9 @@ body {
 }
 
 .blog-search-submit-button {
-	padding: 7px 14px 6px 14px;
+	padding: 7px 14px!important;
 }
 
-
-// 7. Blog Post
 .main .blog-post-metadata {
 	border-top: 1px solid darken(@color-swatch1, 10%);
 	width:100%;
@@ -214,15 +222,35 @@ body {
 }
 
 .blog-post-title {
-	margin-top:60px;
+	margin-top:40px;
 	margin-bottom:10px;
+	a {
+		color:@font-swatch4-color;
+	}
 }
 
-.form-group {
-	margin: 0px auto;
-	display: table;
-	width: 50%;
-	padding-left: 5%;
+.blog-post-feature-image-wrap {
+	background-repeat: no-repeat;
+	margin-left: -16.7%;
+	padding-left: 16.7%;
+	margin-right: -16.7%;
+	padding-right: 16.7%;
+	width: inherit;
+	img {
+		width:100%;
+	}
+}
+
+.blogpost, .blog-post-list {
+   .blog-post-feature-image-wrap {
+       line-height: 0;
+       background-size: cover;
+       background-position: center;
+       width: 40%;
+       img {
+           display: none;
+       }
+   }
 }
 
 /*	===============================
@@ -281,7 +309,7 @@ input, textarea {
 	letter-spacing: @font-swatch7-letter-spacing; 
 	font-size: @font-swatch7-font-size;
 		&:hover {
-		background-color: lighten(@color-swatch7,10%);
+		background-color: lighten(@color-swatch3,10%);
 		border: none;
 	}
 }
@@ -357,8 +385,8 @@ select {
 	=============================== */
 
 .bk-footer {
-	background-color: @color-swatch3;
-	padding: 30px 0px;
+	background-color: @color-swatch4;
+	padding: 10px 0px;
 }
 
 .widget.profile {
@@ -371,8 +399,8 @@ select {
 	color:@font-swatch7-color;
 }
 
-footer .widget.profile .bk-profile-socialicons span a {
-	background-color:@color-swatch3;
+footer .widget.profile .bk-profile-socialicons span a:hover {
+	background-color:lighten(@color-swatch4,10%);
 }
 
 /*	===============================
@@ -381,6 +409,7 @@ footer .widget.profile .bk-profile-socialicons span a {
 @media only screen and (max-width: 768px) {
 	.widget .extendednavigation ul li {
 		border:0;
+		padding:0;
 	}
 	.widget.extendednavigation {
 		width:100%;
@@ -391,7 +420,10 @@ footer .widget.profile .bk-profile-socialicons span a {
 		top: -40px!important;
 	}
 	.widget .extendednavigation ul {
-		padding-top:30px;
+		padding-top:0;
+	}
+	.textbox {
+		padding: 0px 0px 50px 0px;
 	}
 }
 
@@ -418,5 +450,15 @@ footer .widget.profile .bk-profile-socialicons span a {
 	}
 	.blog-post-title {
 		padding-top: 20px;
+	}
+	.textbox {
+		padding: 0px 0px 30px 0px;
+	}
+	.widget.blogsearch input[type=search] {
+		width:50%;
+	}
+	.widget.companyname a {
+		font-size:bkscale(@font-swatch10-font-size, 0.9);
+		line-height: bkscale(@font-swatch10-line-height, 0.9);
 	}
 }

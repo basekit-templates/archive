@@ -16,7 +16,7 @@
         "Swatch 1": {
             "color1":"#ffffff",
             "color2":"#aaaaaa",
-            "color3":"#232323",
+            "color3":"#d12525",
             "color4":"#000000",
             "color5":"#aaaaaa",
             "color6":"#000000",
@@ -60,7 +60,7 @@
         }
     },
     "fontSwatch": {
-       "title": "Monserrat",
+       "title": "Oxygen",
         "font1": {
             "font-family": "\"Oxygen\", \"Trebuchet MS\", Helvetica, sans-serif",
             "font-size": "32px",
@@ -71,7 +71,7 @@
         },
         "font2": {
             "font-family": "\"Oxygen\", \"Trebuchet MS\", Helvetica, sans-serif",
-            "font-size": "26px",
+            "font-size": "22px",
             "font-weight": "300",
             "line-height": "32px",
             "color": "@color-swatch4",
@@ -87,9 +87,9 @@
         },
         "font4": {
             "font-family": "\"Oxygen\", \"Trebuchet MS\", Helvetica, sans-serif",
-            "font-size": "14px",
-            "font-weight": "400",
-            "line-height": "20px",
+            "font-size": "18px",
+            "font-weight": "300",
+            "line-height": "34px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
