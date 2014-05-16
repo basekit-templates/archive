@@ -1,4 +1,4 @@
-archive
+Archive
 =======
 
 BaseKit Blog Template
