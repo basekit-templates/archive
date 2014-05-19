@@ -25,7 +25,7 @@ body {
 
 .wrapper {
     width: 90%;
-    margin: 0 5%;
+    margin: 0 auto;
     @media only screen and (min-width: 1140px) {
         width: 1024px;
         margin: 0 auto;
@@ -260,6 +260,28 @@ body {
 .dietary-icon {
 	border:1px solid @color-swatch5!important;
 	padding:5px;
+}
+
+.menu-items .inner-item  .menu-item-image-wrap {
+	background-size:cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    background-position: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    img {
+        display: none;
+    }
+}
+
+.menu .menu-subsection {
+	padding: 4% 0;
+}
+
+p.menu-note {
+border-bottom: 1px solid @color-swatch5;
+margin-bottom: 3em;
 }
 
 .menu-item-promoted {
