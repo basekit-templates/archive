@@ -132,6 +132,7 @@ body {
 		z-index: 1;
 		max-width: 600px;
 		margin-left: 45%;
+		margin-right: 5%;
 	}
 } 
 
@@ -236,18 +237,6 @@ body {
 	}
 }
 
-.blog-post-feature-image-wrap {
-	background-repeat: no-repeat;
-	margin-left: -16.7%;
-	padding-left: 16.7%;
-	margin-right: -16.7%;
-	padding-right: 16.7%;
-	width: inherit;
-	img {
-		width:100%;
-	}
-}
-
 .blogpost, .blog-post-list {
    .blog-post-feature-image-wrap {
        line-height: 0;
@@ -258,6 +247,33 @@ body {
            display: none;
        }
    }
+}
+
+.widget.blogpost .blog-post-feature-image-wrap {
+	width:100%;
+	height:400px;
+}
+
+.blog-search-input {
+	border-radius:0;
+	border:0;
+}
+
+.blog-search-submit-button {
+	padding:4px 14px 8px 14px;
+	background-color:@color-swatch3;
+	border:0;
+	margin-bottom:10px;
+	font-family:@font-swatch7-font-family; 
+	font-weight: @font-swatch7-font-weight; 
+	color:@font-swatch7-color; 
+	line-height:@font-swatch7-line-height; 
+	letter-spacing: @font-swatch7-letter-spacing; 
+	font-size: @font-swatch7-font-size;
+		&:hover {
+		background-color: lighten(@color-swatch3,10%);
+		border: none;
+	}
 }
 
 /*	===============================
@@ -372,6 +388,14 @@ select {
 	margin:30px 0px;
 }
 
+.checkout-empty-link.btn {
+	padding:10px;
+	a:hover {
+		text-decoration: none;
+		background-color:lighten(@color-swatch3,10%);
+	}
+}
+
 /*	===============================
 	Bootstrap Modifications
 	=============================== */
@@ -387,23 +411,6 @@ input, textarea {
 
 .widget.profile form button {
 	padding: 7px 14px 11px;
-}
-
-.blog-search-submit-button {
-	padding:4px 14px 8px 14px;
-	background-color:@color-swatch3;
-	border:0;
-	margin-bottom:10px;
-	font-family:@font-swatch7-font-family; 
-	font-weight: @font-swatch7-font-weight; 
-	color:@font-swatch7-color; 
-	line-height:@font-swatch7-line-height; 
-	letter-spacing: @font-swatch7-letter-spacing; 
-	font-size: @font-swatch7-font-size;
-		&:hover {
-		background-color: lighten(@color-swatch3,10%);
-		border: none;
-	}
 }
 
 .widget.button button {
@@ -429,6 +436,22 @@ input, textarea {
 .signupform fieldset button {
 	padding:20px 14px 24px 14px;
 	line-height:0;
+}
+
+.widget.responsiveslideshow .title, .widget.responsiveslideshow .description {
+	color:@font-swatch5-color;
+}
+
+.widget.paypalbuynow .widget.button.paypal {
+	border-radius:0;
+}
+
+.widget.profile form button {
+	padding: 7px 14px 11px 14px;
+}
+
+.widget.feature .feature-bgimg .content .spare {
+	padding-left:40px;
 }
 
 /*	===============================
@@ -517,6 +540,15 @@ footer .widget.profile .bk-profile-socialicons span a:hover {
 	}
 	.widget .extendednavigation ul li:hover ul {
 		margin:0;
+	}
+	.blog-post-body {
+		padding:0px 20px;
+	}
+	.widget.blogpost .blog-post-title {
+		padding:0;
+	}
+	select {
+		width:100%;
 	}
 }
 
