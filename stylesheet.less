@@ -66,11 +66,14 @@ body {
 }
 
 .widget.companyname {
-	margin-left:5px;
+	margin-left: 5px;
+	@media @tablet {
+		margin-right: 35px;
+	}
 }
 
 .widget.companyname a {
-	font-weight:700;
+	font-weight: 700;
 }
 
 .logo-container {
@@ -499,7 +502,10 @@ input, textarea {
 }
 
 #textwidgetbox1 {
-	padding:4em 0 4em;
+	padding: 3em 0;
+	@media @mobile {
+		padding: 1em 0;
+	}
 }
 
 #textwidgetbox1.bk-tpl-hidden {
@@ -744,8 +750,9 @@ footer .widget.profile .bk-profile-socialicons span a:hover {
 
 @media @tablet {
 	.widget.companyname a {
-		font-size:bkscale(@font-swatch10-font-size, 0.8);
-		line-height: bkscale(@font-swatch10-line-height, 0.8);
+		font-size:bkscale(@font-swatch10-font-size, 0.78);
+		line-height: bkscale(@font-swatch10-line-height, 0.78);
+		word-wrap: break-word;
 	}
 }
 
