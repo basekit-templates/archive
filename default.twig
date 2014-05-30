@@ -3,11 +3,13 @@
 
 {% block content %}
 
-  <header class="bk-header">
+  <header class="bk-header clearfix">
       <div class="companyheader wrapper">
+        <div class="logo-container">
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
             {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-          	{{widget('extendednavigation', 'navigationheader', {})|raw}}
+        </div>
+          	{{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
        </div>
   </header> 
 
