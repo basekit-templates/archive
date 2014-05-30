@@ -456,8 +456,18 @@ input, textarea {
 	background-color: darken(@color-swatch1,3%);
 }
 
-.widget.profile form button {
-	padding: 7px 14px 11px;
+.widget {
+    &.profile {
+        form {
+            fieldset input {
+                border: 1px solid fade(@color-swatch5, 25%);
+                vertical-align: top;
+                @media @mobile {
+                    width: 75%;
+                }
+            }
+        }
+    }
 }
 
 .widget.button button {
@@ -491,10 +501,6 @@ input, textarea {
 
 .widget.paypalbuynow .widget.button.paypal {
 	border-radius:0;
-}
-
-.widget.profile form button {
-	padding: 7px 14px 11px 14px;
 }
 
 .widget.feature .feature-bgimg .content .spare {
