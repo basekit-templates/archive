@@ -3,13 +3,15 @@
 
 {% block content %}
 
-  <header class="bk-header wrapper">
+<header class="bk-header clearfix">
       <div class="companyheader wrapper">
+        <div class="logo-container">
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
             {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-          	{{widget('extendednavigation', 'navigationheader', {})|raw}}
+        </div>
+            {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
        </div>
-  </header>
+  </header> 
 
 <div class="textbox wrapper">
     {{widget('content', 'textwidgetbox1', {content: '<h4 style="text-align:center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</h4>', lines: 'all'})|raw}}
