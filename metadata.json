@@ -2,10 +2,7 @@
 	"name":"Archive",
 	"thumbnail":"archive.png",
 	"screenshot":"archive.png",
-        "pageTypes": [
-        "home",
-        "default"
-    ],
+        
     "templateType":"blog",
     "tags": {
     "en": ["clean", "technology", "white", "modern", "blog", "professional", "simple", "sans serif"],
